@@ -12,19 +12,23 @@ class calculator :
         return self.num1/self.num2
 
 def fib(a):
-      fib = [0, 1, 1]
-      for i in range(3, No+1) :
-         fib.append(fib[i-2]+fib[i-1])
-      return fib
+    fib = [0, 1, 1]
+    for i in range(3, No+1) :
+        fib.append(fib[i-2]+fib[i-1])
+    return fib
 
 def morabe(a, b):
-     mohit = 2 *(tool + arz)
-     masahat = tool*arz
-     return masahat , mohit
+    mohit = 2 *(tool + arz)
+    masahat = tool*arz
+    return masahat , mohit
+
+# def bmmfunc(*args):
+#     bmm = gcd(args[0],args[1])
+#     print(bmm)
 
 while True :
     from math import *
-    selector = input('Choose : Calculator of 2 Nombers(cal) , Algebra sets(set) , Recognize being a prime nomber(pr) , Prime nombers list(prlist) , Factorial calculation(fact) , Calculate the perimeter and area(ea) , Fibonacci numbers(fib) , The largest common denominator of two numbers(cd) , About app(about) , To close app(close) : ')
+    selector = input('Choose : Calculator of 2 numbers(cal) , Algebra sets(set) , Recognize being a prime number(pr) , Prime numbers list(prlist) , Factorial calculation(fact) , Calculate the perimeter and area(ea) , Fibonacci numbers(fib) , The largest common denominator of two numbers(cd) , About app(about) , To close app(close) : ')
     selector = selector.lower()
     if selector == 'ea':
         try:
@@ -80,7 +84,7 @@ while True :
                         l.append(No1)
                 No1 += 1
             ml = str(l)
-            print('Prime nombers from %i to %i : %s' % (No11,No2,ml))
+            print('Prime numbers from %i to %i : %s' % (No11,No2,ml))
         except:
             print('something is wrong! :( try again....')
 
@@ -153,5 +157,3 @@ while True :
         print('\nAbout Application : \n Written in the Python programming language! \n In 150 lines of code! \n And by Elman Shokri \n \nContact with me! : \n E-mail : elmanshokritz1384@gmail.com \n Telegram id : @ElmanTr \n \n Thank you for using the app!')
     else:
         print('Error!!!, please try again')
-
-
